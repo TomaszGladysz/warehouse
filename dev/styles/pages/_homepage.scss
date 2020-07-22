@@ -9,9 +9,33 @@ body{
         font-weight: 400;
         color: #37cfa2;
         font-size: 40px;
+        text-transform: uppercase;
+    }
+    h3{
+        font-family: "Oswald", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
     }
 }
 
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section{
+    padding-bottom: 40px;
+}
+
+.section_intro{
+    padding: 40px 0;
+    p{
+        color: gray;
+        font-size: 1.3em;
+        width: 50%;
+        line-height: 1.6;
+    }
+}
 
 //MENU
 
@@ -161,3 +185,122 @@ nav{
 }
 
 //HERO END
+
+
+
+//HOUSES
+
+.houses_wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.house{
+    width: 30%;
+    position: relative;
+
+    img{
+            max-width: 100%;
+    }
+    p{
+        color: #939393;
+    }
+}
+
+.house > .house_content:after {
+    position: absolute;
+    content: "";
+    right: 0px;
+    bottom: 0px;
+    top: 20px;
+    background: #000;
+    width: 100%;
+    z-index: -1;
+    transition: .3s all ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.house:hover > .house_content:after, .house:focus > .house_content:after {
+    right: -20px;
+    bottom: -20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.house_text{
+    padding: 0;
+    transition: .3s all ease-in-out;
+}
+
+.house_content:hover > .house_text{
+    padding-left: 40px;
+    
+    h3{
+        color: white;
+    }
+}
+//HOUSES END
+
+
+
+//AGENTS
+
+.agents_wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.agent{
+    width: 30%;
+    position: relative;
+}
+
+.agent_photo{
+    overflow: hidden;
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: .3s all ease-in-out;
+    }
+}
+
+.agent_photo:hover > img{
+    transform: scale(1.1);
+}
+
+
+
+.agent_description{
+    background-color: #37cfa2;
+    padding: 15px;
+    h3{
+        margin: 0;
+        font-size: 1.5em;
+    }
+    p{
+        margin: 15px 0 0 0;
+        font-size: 1.2em;
+    }
+}
+
+//AGENTS END
+
+
+
+//HOW
+
+#how{
+    background-color: #37cfa2;
+    h2{
+        color: black;
+        text-align: center;
+    }   
+}
+
+
+//HOW END
