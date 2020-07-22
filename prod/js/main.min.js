@@ -1,0 +1,1 @@
+window.addEventListener("scroll",function(){var e=window.pageYOffset,t=document.getElementById("nav");100<e?(t.style.height="100px",t.style.background="blue",t.style.color="red"):(t.style.height="50px",t.style.background="red"),document.getElementById("pixels").innerHTML=e});
