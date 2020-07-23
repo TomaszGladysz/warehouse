@@ -1,0 +1,114 @@
+//SINGLE HOUSE HEADER
+
+.hero_single{
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center center;
+    
+    &::before{
+        z-index: 1;
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .wrapper{
+        height: 100%;
+    }
+}
+
+.hero_single_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    color: white;
+    z-index: 2;
+    position: relative;
+    h1{
+        font-size: 3em;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    p{
+        font-size: 1.3em;
+    }
+    .arrow_down{
+        position: absolute;
+        bottom: 20px;
+        transition: .3s all ease-in-out;
+
+        &:hover{
+            bottom: 30px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 1.5em;
+            color: white;
+        }
+    }
+}
+//SINGLE HOUSE HEADER END
+
+#house{
+    padding: 100px 0;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+//SINGLE HOUSE LEFT
+.left{
+    width: 58%;
+}
+//SINGLE HOUSE LEFT END
+
+
+
+//SINGLE HOUSE RIGHT
+.right{
+    width: 38%;
+    h3{
+        margin-top: 0;
+        font-size: 1.8em;
+        font-weight: 200;
+    }
+    p{
+        color: gray;
+        margin-bottom: 30px;
+        line-height: 1.8;
+    }
+}
+
+.house_agent{
+    padding-top: 30px;
+    .agent_head{
+        img{
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        h3{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+            font-weight: 100;
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+//SINGLE HOUSE RIGHT END

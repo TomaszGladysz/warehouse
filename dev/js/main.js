@@ -1,22 +1,17 @@
-window.addEventListener('scroll',function () {
-    var dejascrolley = window.pageYOffset;
-    var myNav = document.getElementById('nav');
-    if (dejascrolley > 100){
-        myNav.style.height = "100px";
-        myNav.style.background = "blue";
-        myNav.style.color = "red";
-    } else{
-        (dejascrolley < 100)
-        myNav.style.height = "50px";
-        myNav.style.background = "red";        
-    }
+mybutton = document.querySelector('back_to_top');
+
+window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.opacity = "1";
+  } else {
+    mybutton.style.opacity = "0";
+  }
+}
 
 
-
-    document.getElementById("pixels").innerHTML = dejascrolley;
-});
-
-
-
-
-
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

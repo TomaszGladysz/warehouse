@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">    
     <script src="https://kit.fontawesome.com/2708ec1a24.js" crossorigin="anonymous"></script>
     <title>Warehouse Homepage</title>
@@ -14,6 +14,13 @@
 
     <!-- body wrap -->
     <div class="body_wrap">
+
+        <a href="#home" id="top">
+            <div class="back_to_top">
+                <p></p><i class="fas fa-arrow-up"></i></p>
+            </div>
+        </a>
+
         <!-- menu -->
         <header>
             <div class="wrapper">
@@ -25,8 +32,8 @@
                         <nav>
                             <ul>
                                 <li><a href="#home">Home</a></li>
-                                <li><a href="#properties">Properties</a></li>
-                                <li><a href="#agentn">Agents</a></li>
+                                <li><a href="#our_houses">Properties</a></li>
+                                <li><a href="#agents">Agents</a></li>
                                 <li><a href="#news">News</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
@@ -38,7 +45,7 @@
         <!-- menu end -->
 
         <!-- hero swiper -->
-        <div class="hero">
+        <div class="hero" id="home">
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -81,7 +88,7 @@
         <!-- hero swiper end -->
 
         <!-- our houses -->
-        <div class="section" id="our_houses">
+        <section id="our_houses">
             <div class="wrapper">
                 <div class="section_intro">
                     <h2>Our Outstanding houses</h2>
@@ -90,7 +97,7 @@
                 <div class="houses_wrap">
                     <div class="house">
                         <div class="house_content">
-                            <a href="single.html">
+                            <a href="property-single.html">
                                 <img src="/../img/property_1.jpg" alt="">
                             </a>
                             <div class="house_text">
@@ -127,11 +134,11 @@
                 </div>
                 
             </div>
-        </div>
+        </section>
         <!-- our houses END -->
 
         <!-- Agents  -->
-        <div class="section" id="agents">
+        <section id="agents">
             <div class="wrapper">
                 <div class="section_intro">
                     <h2>Real Estate Agents</h2>
@@ -168,40 +175,40 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- agents END -->
 
         <!-- how it horks -->
-        <div class="section" id="how">
+        <section id="how">
             <div class="wrapper">
                 <div class="section_intro">
                     <h2>How it works</h2>
                 </div>
                 <div class="steps">
-                    <div class="step_1">
+                    <div class="step step_line">
                         <p>01.<i class="fas fa-home"></i></p>
                         <h3>Find Property.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="step_2">
+                    <div class="step step_line">
                         <p>02.<i class="fas fa-dollar-sign"></i></p>
                         <h3>Buy property.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="step_3">
+                    <div class="step">
                         <p>03.<i class="fas fa-heart"></i></p>
                         <h3>Outstanding houses.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- how it workt end -->
 
 
         <!-- News -->
 
-        <div class="section" id="news">
+        <section id="news">
             <div class="wrapper">
                 <div class="section_intro">
                     <h2>NEWS & EVENTS</h2>
@@ -216,7 +223,7 @@
                             </a>                        </div>
                         <div class="news_description">
                             <a href=""><h3>News Title 1</h3></a>
-                            <p>Alison Bloking • Jan 18, 2019• <span>Outstanding properties</span></p>
+                            <p>Alison Bloking <span>&bullet;</span> Jan 18, 2019 <span>&bullet;</span> <a href="">Outstanding properties</a></p>
                         </div>
                     </div>
                     <div class="news">
@@ -227,7 +234,7 @@
                         </div>
                         <div class="news_description">
                             <a href=""><h3>News Title 2</h3></a>
-                            <p>Alison Bloking • Jan 18, 2019• <span>Outstanding properties</span></p>
+                            <p>Alison Bloking <span>&bullet;</span> Jan 18, 2019 <span>&bullet;</span> <a href="">Outstanding properties</a></p>
                         </div>
                     </div>
                     <div class="news">
@@ -237,24 +244,119 @@
                             </a>                        </div>
                         <div class="news_description">
                             <a href=""><h3>News Title 3</h3></a>
-                            <p>Alison Bloking • Jan 18, 2019• <span>Outstanding properties</span></p>
+                            <p>Alison Bloking <span>&bullet;</span> Jan 18, 2019 <span>&bullet;</span> <a href="">Outstanding properties</a></p>
                         </div>
                     </div>
 
                 </div>
 
-
-
             </div>
-        </div>
+        </section>
 
         <!-- News END -->
+
+
+
+        <!-- contact -->
+        <section id="contact">
+            <div class="wrapper">
+                <div class="section_intro">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="contact_wrap">
+                    <div class="left">
+                        <h3>Get in Touch</h3>
+
+                        <form>
+                            <div class="form_wrap">
+                                <div class="row">
+                                    <div>
+                                        <label>First Name</label>
+                                        <input name="name" type="text">
+                                    </div>
+                                    <div>
+                                        <label>Last Name</label>
+                                        <input name="name" type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <label>Email</label>
+                                        <input name="email" type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <label>Subject</label>
+                                        <input name="subject" type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div>
+                                        <label>Message</label>
+                                        <textarea name="message" type="text" placeholder="Write your notes or questions here..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="right">
+                        <p>
+                            <h4>Address</h4>
+                            203 Fake St. Mountain View, San Francisco, California, USA
+                        </p>
+                        <p>
+                            <h4>Phone</h4>
+                            <a href="#">+1 232 3235 324</a>
+                        </p>
+                        <p>
+                            <h4>Email Address</h4>
+                            <a href="#">youremail@domain.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact end -->
+
+
+        <!-- Footer -->
+
+        <section id="footer">
+            <div class="wrapper">
+
+                <div class="foot_top">
+                    <div class="left">
+                        <h5>About Us</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                    </div>
+                    <div class="right">
+                        <h5>Follow Us</h5>
+                        <div class="social_wrap">
+                            <p><i class="fab fa-facebook-f"></i></p>
+                            <p><i class="fab fa-twitter"></i></p>
+                            <p><i class="fab fa-instagram"></i></p>
+                            <p><i class="fab fa-linkedin-in"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot_bottom">
+                    Copyright © 2020 All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="http://tomek.be/">Tomasz Gladysz</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer END -->
+
 
     </div>
     <!-- body wrap END -->
 </body>
 
-<!-- push -->
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
